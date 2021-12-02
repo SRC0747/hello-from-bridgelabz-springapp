@@ -1,6 +1,6 @@
 package com.bridgelabz.hellofrombridgelabzspringapp.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -13,8 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloRestController {
-
-    @RequestMapping("/greeting")
+    /**
+     * Purpose : This method is used to get greeting hello message from BridgeLabz using RestController
+     *
+     * @return greeting hello message
+     */
+    @GetMapping("/greeting")
     public String greet() {
         return "Hello From BridgeLabz";
     }

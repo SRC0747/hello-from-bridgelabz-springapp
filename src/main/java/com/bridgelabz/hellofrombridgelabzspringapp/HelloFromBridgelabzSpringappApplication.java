@@ -1,12 +1,12 @@
 package com.bridgelabz.hellofrombridgelabzspringapp;
 
 import com.bridgelabz.hellofrombridgelabzspringapp.component.EmployeeBean;
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.slf4j.LoggerFactory;
-import org.slf4j.Logger;
 import org.springframework.context.ApplicationContext;
-
 
 /**
  * Purpose : Simulate SpringBoot application invoking welcome message usng slf4j logger expression
@@ -17,6 +17,7 @@ import org.springframework.context.ApplicationContext;
  */
 
 @SpringBootApplication
+@Slf4j
 public class HelloFromBridgelabzSpringappApplication {
 
 	public static final Logger logger = LoggerFactory.getLogger(HelloFromBridgelabzSpringappApplication.class);
